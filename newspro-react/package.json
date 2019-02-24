@@ -33,6 +33,7 @@
     "antd": "^3.13.6",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-responsive": "^6.1.1"
+    "react-responsive": "^6.1.1",
+    "whatwg-fetch": "^3.0.0"
   }
 }
