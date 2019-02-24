@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: './src/js/root.js',
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
@@ -21,11 +21,11 @@ module.exports = {
         use: [{
           loader: "style-loader"
         }, {
-          loader: "css-loader",
-          options: {
-            modules: true, // 指定启用css modules
-            localIdentName: '[name]_[local]_[hash:base64:5]' // 指定css的类名格式
-          }
+          loader: "css-loader"
+          // options: {
+          //   modules: true, // 指定启用css modules
+          //   localIdentName: '[name]_[local]_[hash:base64:5]' // 指定css的类名格式
+          // }
         }]
       }
     ]
