@@ -27,6 +27,10 @@ module.exports = {
           //   localIdentName: '[name]_[local]_[hash:base64:5]' // 指定css的类名格式
           // }
         }]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   },

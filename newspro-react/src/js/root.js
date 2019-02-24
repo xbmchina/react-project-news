@@ -1,13 +1,23 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PCIndex from './components/pc_index';
+import MobileIndex from './components/mobile_index';
+import 'antd/dist/antd.css';
+import '../style';//全局样式
+import MediaQuery from 'react-responsive'; //获取媒体类型
 
 class Root extends React.Component {
 
   render() {
     return (
-      <div>
-        1234
-      </div>
+			<div>
+				<MediaQuery query='(min-device-width: 1224px)'>
+					<PCIndex/>
+				</MediaQuery>
+				<MediaQuery query='(max-device-width: 1224px)'>
+					<MobileIndex/>
+				</MediaQuery>
+			</div>
     );
   }
 }
