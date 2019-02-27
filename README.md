@@ -36,9 +36,12 @@ mobile_list.js
 
 
 
+#### react-router巨坑
+React-Router 刷新后报错 or Cannot GET /detail
+解决方法：
+https://blog.csdn.net/zwkkkk1/article/details/83411071
 
-
-
+this.props.match.params.uniquekey
 
 
 

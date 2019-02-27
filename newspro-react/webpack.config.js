@@ -50,8 +50,9 @@ module.exports = {
   ],
   devServer: {
     host: '192.168.11.138',
-    port: 8080,
+    port: 9090,
     contentBase: './dist',
+    historyApiFallback: true,//特别注意
     hot: true
   }
 };
